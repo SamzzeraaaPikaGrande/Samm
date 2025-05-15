@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Conga Time!</title>
+    <title>SAMZZERA</title>
     <style>
         body {
             margin: 0;
@@ -30,7 +30,6 @@
             color: #ccc;
         }
 
-        /* Adicionando uma animação para o fundo RGB */
         @keyframes rgbChange {
             0% { background-color: rgb(255, 0, 0); }
             25% { background-color: rgb(0, 255, 0); }
@@ -62,14 +61,12 @@
     <script>
         const audio = document.getElementById('conga');
 
-        // Tentativa automática ao carregar
         window.addEventListener('load', () => {
             audio.play().catch(() => {
                 document.getElementById('message').innerText = "CLICA NA TELA ANIMAL!";
             });
         });
 
-        // Segunda chance com qualquer clique
         document.addEventListener('click', () => {
             audio.play();
         });
